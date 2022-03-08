@@ -1,0 +1,35 @@
+body {
+  background-color: pink;
+  color: purple;
+}
+
+.movie-app > .row {
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.image {
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.image:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.image:hover .over {
+  opacity: 1;
+}
+
+.over {
+  position: absolute;
+  background: pink;
+  opacity: 0;
+  bottom: 0;
+  width: 100%;
+  transition: 0.1s ease-in;
+  font-size: 1vw;
+  padding: 2vw;
+  text-align: center;
+}
