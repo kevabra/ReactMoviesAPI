@@ -93,7 +93,7 @@ const MovieApplication = () => {
   const [favorited_films, setFavFilms] = useState([]);
 
   const processFilmSearch = async() => {
-    const api_path = `http://www.omdbapi.com/?s=${searchEntry}&apikey=dc2fc6e9`;
+    const api_path = `https://www.omdbapi.com/?s=${searchEntry}&apikey=dc2fc6e9`;
 
     const api_call = await fetch(api_path);
     const api_result = await api_call.json();
